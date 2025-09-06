@@ -55,17 +55,37 @@ def find_room():
     return room
 
 dird = input("Whar do we go: east, west, north, south")
+
 if dird == ("east") and xcord < 1:
     xcord += 1
+    
 elif dird == ("east"):
     no_message = get_message()
     print (no_message)
+    
 elif dird == ("west") and xcord > -1:
     xcord -= 1
+    
 elif dird == ("west"):
     no_message = get_message()
     print (no_message)
-elif dird == ("north") and
+    
+elif dird == ("north") and ycord < 1:
+    ycord += 1
+
+elif dird == ("north"):
+    no_message = get_message()
+    print (no_message)
+
+elif dird == ("south") and ycord > -1:
+    ycord -=1
+    
+elif dird == ("south"):
+    no_message = get_message()
+    print (no_message)
+    
+else:
+    print ("Is mayonayse an instrument?")
 
 current_room = find_room()
 print(current_room)
