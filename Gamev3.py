@@ -1,7 +1,7 @@
 import random
 
-xcord = 1
-ycord = -1
+xcord = 0
+ycord = 0
 room =4
 
 no_message = "Null"
@@ -56,28 +56,28 @@ def find_room():
 
 dird = input("Whar do we go: east, west, north, south")
 
-if (dird == ("east") or ("East") )and xcord < 1:
+if dird == ("east")and xcord < 1 or dird ==("East") and xcord<1:
     xcord += 1
     
-elif dird == ("east") or ("East"):
+elif dird == ("east") or dird == ("Euast"):
     no_message = get_message()
     print (no_message)
     
-elif (dird == ("west") or ("West") )and xcord > -1:
+elif dird == ("west")and xcord > -1 or dird == ("West")and xcord > -1:
     xcord -= 1
     
-elif dird == ("west")or ("West"):
+elif dird == ("west") or dird == ("West"):
     no_message = get_message()
     print (no_message)
     
-elif (dird == ("north") or ("North"))and ycord < 1:
+elif dird == ("north")and ycord < 1 or dird == ("North")and ycord < 1:
     ycord += 1
 
-elif dird == ("north") or ("North"):
+elif dird == ("north") or dird == ("North"):
     no_message = get_message()
     print (no_message)
 
-elif (dird == ("south") or ("South"))and ycord > -1:
+elif dird == ("south")and ycord > -1 or dird == ("South")and ycord > -1:
     ycord -=1
     
 elif dird == ("south") or dird == ("South"):
@@ -88,12 +88,13 @@ else:
     print ("Is mayonayse an instrument?")
 
 current_room = find_room()
-#print(current_room)
-
+print(current_room)
+print(str(xcord),str(ycord))
 if current_room == 1:
     print("You are now in the arcade have fun with all these games")
 elif current_room==2:
     print("You are now in the front area you can check in for an amazing day of pizza and fun")
+    print("You see a desk with a computer and cash register.")
 elif current_room==3:
     print("You are now in the security office be careful that the security guard doesn't find you in here.")
 elif current_room==4:
