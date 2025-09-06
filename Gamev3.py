@@ -56,31 +56,31 @@ def find_room():
 
 dird = input("Whar do we go: east, west, north, south")
 
-if dird == ("east") and xcord < 1:
+if (dird == ("east") or ("East") )and xcord < 1:
     xcord += 1
     
-elif dird == ("east"):
+elif dird == ("east") or ("East"):
     no_message = get_message()
     print (no_message)
     
-elif dird == ("west") and xcord > -1:
+elif (dird == ("west") or ("West") )and xcord > -1:
     xcord -= 1
     
-elif dird == ("west"):
+elif dird == ("west")or ("West"):
     no_message = get_message()
     print (no_message)
     
-elif dird == ("north") and ycord < 1:
+elif (dird == ("north") or ("North"))and ycord < 1:
     ycord += 1
 
-elif dird == ("north"):
+elif dird == ("north") or ("North"):
     no_message = get_message()
     print (no_message)
 
-elif dird == ("south") and ycord > -1:
+elif (dird == ("south") or ("South"))and ycord > -1:
     ycord -=1
     
-elif dird == ("south"):
+elif dird == ("south") or dird == ("South"):
     no_message = get_message()
     print (no_message)
     
@@ -88,7 +88,7 @@ else:
     print ("Is mayonayse an instrument?")
 
 current_room = find_room()
-print(current_room)
+#print(current_room)
 
 if current_room == 1:
     print("You are now in the arcade have fun with all these games")
@@ -108,6 +108,3 @@ elif current_room==8:
     print("You are now in the kitchen. What the chef says goes so if you have to make some suspicious pizza do it.")
 elif current_room==9:
     print("You are now in the storage room. Legend says that people have died here, lets hope you are not another.")
-    
-    
-    
