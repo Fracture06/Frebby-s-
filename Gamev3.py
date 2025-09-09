@@ -1,7 +1,7 @@
 import random
 
-xcord = 0
-ycord = 0
+xcord = 1
+ycord = -1
 room =4
 
 no_message = "Null"
@@ -56,31 +56,31 @@ def find_room():
 
 dird = input("Whar do we go: east, west, north, south")
 
-if dird == ("east")and xcord < 1 or dird ==("East") and xcord<1:
+if dird == ("east") and xcord < 1:
     xcord += 1
     
-elif dird == ("east") or dird == ("Euast"):
+elif dird == ("east"):
     no_message = get_message()
     print (no_message)
     
-elif dird == ("west")and xcord > -1 or dird == ("West")and xcord > -1:
+elif dird == ("west") and xcord > -1:
     xcord -= 1
     
-elif dird == ("west") or dird == ("West"):
+elif dird == ("west"):
     no_message = get_message()
     print (no_message)
     
-elif dird == ("north")and ycord < 1 or dird == ("North")and ycord < 1:
+elif dird == ("north") and ycord < 1:
     ycord += 1
 
-elif dird == ("north") or dird == ("North"):
+elif dird == ("north"):
     no_message = get_message()
     print (no_message)
 
-elif dird == ("south")and ycord > -1 or dird == ("South")and ycord > -1:
+elif dird == ("south") and ycord > -1:
     ycord -=1
     
-elif dird == ("south") or dird == ("South"):
+elif dird == ("south"):
     no_message = get_message()
     print (no_message)
     
@@ -89,12 +89,11 @@ else:
 
 current_room = find_room()
 print(current_room)
-print(str(xcord),str(ycord))
+
 if current_room == 1:
     print("You are now in the arcade have fun with all these games")
 elif current_room==2:
     print("You are now in the front area you can check in for an amazing day of pizza and fun")
-    print("You see a desk with a computer and cash register.")
 elif current_room==3:
     print("You are now in the security office be careful that the security guard doesn't find you in here.")
 elif current_room==4:
@@ -109,3 +108,6 @@ elif current_room==8:
     print("You are now in the kitchen. What the chef says goes so if you have to make some suspicious pizza do it.")
 elif current_room==9:
     print("You are now in the storage room. Legend says that people have died here, lets hope you are not another.")
+    
+    
+    
