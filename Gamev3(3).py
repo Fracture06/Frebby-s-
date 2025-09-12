@@ -127,7 +127,7 @@ while leave==False:
   #  print(current_room)
 
     if current_room == 1:
-        print("")
+        print("You see rows and rows of boxes on shelves, gathering dust")
         print("You are now in the storage room. Legend says that people have died here, lets hope you are not another.")
         print("There are doors to the North and East")
         
@@ -153,17 +153,17 @@ while leave==False:
         print("There are doors to the North, East, South, and West")
         
     elif current_room==6:
-        print("")
+        print("You see towering rockwalls and ball pits galore")
         print("You are now in the play place make sure to climb high to escape the other children")
         print("There are doors to the North, South, and West")        
         
     elif current_room== 7:
-        print("")
-        print("You are now in the bathrooms. If you have to hide from someone only one of the stalls lock")
-        print("There are doors to the East and South")
+        print("YOU SHOULD NOT HAVE COME HERE!!!")
+        print("You walk into the bathroom, just as Dr. Shepord was washing his hands, and he Jeff the kills you")
+        break
         
     elif current_room==8:
-        print("")
+        print("You see rows and rows of bloody cooking utencils ")
         print("You are now in the kitchen. What the chef says goes so if you have to make some suspicious pizza do it.")
         print("There are doors to the East, South, and West")
         
